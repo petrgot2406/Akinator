@@ -1,0 +1,45 @@
+{
+    "matan?"
+    {
+        "normal?"
+        {
+            "Redkozubov"
+        }
+        {
+            "Kalinichenko"
+        }
+    }
+    {
+        "algem?"
+        {
+            "Shtepin"
+        }
+        {
+            "proga?"
+            {
+                "normal?"
+                {
+                    "DED"
+                }
+                {
+                    "Kuliev"
+                }
+            }
+            {
+                "algosy?"
+                {
+                    "Lev?"
+                    {
+                        "Lev"
+                    }
+                    {
+                        "Vlad"
+                    }
+                }
+                {
+                    "POSHOL NAHUI!"
+                }
+            }
+        }
+    }
+}
