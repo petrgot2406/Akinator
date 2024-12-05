@@ -21,13 +21,13 @@ struct File_t
     size_t file_size;
     size_t str_num;
     char* buffer;
-    size_t* lineslen;
     char** lines;
+    size_t* lineslen;
 };
 
-Node* NewNode(char* data, char* definition);
-Node* NewRoot(char* quality);
-Tree* NewTree(File_t* file);
+Node* NewNode();
+Node* NewRoot();
+Tree* NewTree();
 void PutFileToTree(File_t* file);
 void DestructNode(Node* node);
 

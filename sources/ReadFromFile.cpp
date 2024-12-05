@@ -54,9 +54,9 @@ void Init_file(File_t* file)
 
     file->buffer    = (char*)calloc(file->file_size + 1, sizeof(char));
 
-    file->lineslen  = (size_t*)calloc(file->str_num, sizeof(size_t));
-
     file->lines     = (char**)calloc(file->str_num + 1, sizeof(char*));
+
+    file->lineslen  = (size_t*)calloc(file->str_num, sizeof(size_t));
 }
 
 void Read_file_to_buffer(File_t* file)
@@ -123,6 +123,6 @@ void Put_file_to_structure(File_t* file)
 void FreeFile(File_t* file)
 {
     free(file->buffer);
-    free(file->lineslen);
     free(file->lines);
+    free(file->lineslen);
 }

@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <assert.h>
+#include <stdlib.h>
 #include "../headers/Akinator.h"
 #include "../headers/Constants.h"
 #include "../headers/GraphDump.h"
@@ -12,8 +12,6 @@ int main()
 
     File_t file    = {};
     //Tree   tree    = {};
-
-    Init_file(&file);
 
     file.file_name = file_tree_name;
 

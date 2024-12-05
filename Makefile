@@ -30,8 +30,8 @@ LINUXFLAGS = -D _DEBUG -ggdb3 -std=c++17 -O0 -Wall -Wextra -Weffc++ -Waggressive
 leak,nonnull-attribute,null,object-size,return,returns-nonnull-attribute,shift,signed-integer-overflow,$\
 undefined,unreachable,vla-bound,vptr
 
-Akinator.exe: main.o Akinator.o Gra.o StackHash.o ReadFromFile.o
-	$(CC) main.o Akinator.o GraphDump.o ReadFromFile.o Tree.o -o Assembler.exe $(LINUXFLAGS)
+Akinator.exe: main.o Akinator.o GraphDump.o ReadFromFile.o Tree.o
+	$(CC) main.o Akinator.o GraphDump.o ReadFromFile.o Tree.o -o Akinator.exe $(LINUXFLAGS)
 
 main.o: $(PATH_SOURCES)/main.cpp $(HEADERS)
 	$(CC) -c $(PATH_SOURCES)/main.cpp $(LINUXFLAGS)
